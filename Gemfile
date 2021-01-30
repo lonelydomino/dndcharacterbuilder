@@ -9,6 +9,8 @@ gem 'pry'
 gem 'rake'
 gem 'sinatra-activerecord'
 gem 'require_all'
+gem 'shotgun'
+
 
 group :development do
     gem 'sqlite3'

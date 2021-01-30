@@ -12,27 +12,28 @@
 
 ActiveRecord::Schema.define(version: 2021_01_29_044905) do
 
-  create_table "armor", force: :cascade do |t|
-    t.string "armor_name"
+  create_table "armors", force: :cascade do |t|
+    t.string "name"
+    t.string "owner"
   end
 
   create_table "characters", force: :cascade do |t|
-    t.string "character_name"
+    t.string "name"
     t.string "character_class"
-    t.string "weapon"
-    t.string "armor"
+    t.integer "weapon_id"
+    t.integer "armor_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_name"
+    t.string "name"
     t.string "email"
     t.string "digest_password"
     t.string "character"
-    t.string "gear"
   end
 
   create_table "weapons", force: :cascade do |t|
-    t.string "weapon_name"
+    t.string "name"
+    t.string "owner"
   end
 
 end
