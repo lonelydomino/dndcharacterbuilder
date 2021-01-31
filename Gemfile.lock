@@ -66,9 +66,11 @@ PLATFORMS
 
 DEPENDENCIES
   pry
+  rack
   rake
   require_all
   shotgun
+  sinatra
   sinatra-activerecord
   sqlite3
   tux
