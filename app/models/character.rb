@@ -1,5 +1,5 @@
 class Character < ActiveRecord::Base
     belongs_to :user
-    has_many :weapons
-    has_many :armors
+    has_and_belongs_to_many :weapons
+    #has_and_belongs_to_many :armors
 end
