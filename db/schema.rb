@@ -14,26 +14,25 @@ ActiveRecord::Schema.define(version: 2021_01_29_044905) do
 
   create_table "armors", force: :cascade do |t|
     t.string "name"
-    t.string "owner"
+    t.integer "character_id"
   end
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.string "character_class"
-    t.integer "weapon_id"
-    t.integer "armor_id"
+    t.string "race"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "digest_password"
-    t.string "character"
   end
 
   create_table "weapons", force: :cascade do |t|
     t.string "name"
-    t.string "owner"
+    t.integer "character_id"
   end
 
 end

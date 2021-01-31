@@ -4,8 +4,8 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
     create_table :characters do |t|
       t.string :name
       t.string :character_class
-      t.integer :weapon_id
-      t.integer :armor_id
+      t.string :race
+      t.integer :user_id
     end
   end
 
