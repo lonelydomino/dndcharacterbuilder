@@ -17,15 +17,16 @@ ActiveRecord::Schema.define(version: 2021_01_31_002621) do
     t.integer "character_id"
   end
 
+  create_table "armors_characters", force: :cascade do |t|
+    t.integer "armor_id"
+    t.integer "character_id"
+  end
+
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.string "character_class"
     t.string "race"
-  end
-
-  create_table "characters_armors", force: :cascade do |t|
-    t.integer "armor_id"
-    t.integer "character_id"
+    t.integer "user_id"
   end
 
   create_table "characters_weapons", force: :cascade do |t|
