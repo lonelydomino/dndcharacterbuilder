@@ -4,7 +4,8 @@ class ApplicationController < Sinatra::Base
     end
 
     get '/' do #intention/location/ and then do
-        erb :'auth/index'
+        @characters = Character.all
+        erb :'characters/index'
     end
 
     get '/auth/login' do 

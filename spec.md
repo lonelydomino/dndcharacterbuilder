@@ -18,3 +18,9 @@ Confirm
 - [ ] Your commit messages are meaningful
 - [ ] You made the changes in a commit that relate to the commit message
 - [ ] You don't include changes in a commit that aren't related to the commit message
+
+Things to do:
+- [ ] have characters only be used for current user
+- [ ] Set user id of new characters made(or add character to array of user characters)
+- [ ] set validations as in character class
+
