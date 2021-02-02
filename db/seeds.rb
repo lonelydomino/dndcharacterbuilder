@@ -1,6 +1,6 @@
-tolkien = User.create(name: "Tolkien", email: "tolkien@lotr.com")
-martin = User.create(name: "Martin", email: "martin@got.com")
-rowling = User.create(name: "Rowling", email: "rowling@hogwarts.com")
+tolkien = User.create(user_name: "Tolkien", email: "tolkien@lotr.com")
+martin = User.create(user_name: "Martin", email: "martin@got.com")
+rowling = User.create(user_name: "Rowling", email: "rowling@hogwarts.com")
 
 aragorn = Character.create(name: "Aragorn", character_class: "Ranger", race: "human")
 gimli = Character.create(name: "Gimli", character_class: "Warrior", race: "dwarf")

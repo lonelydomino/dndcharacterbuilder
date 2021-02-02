@@ -1,8 +1,9 @@
 class CharacterController < Sinatra::Base
+
     configure do 
         set :views, 'app/views'
     end
-    
+    layout 'standard'
     get '/characters' do # LINK THATS IN BROWSER
         @characters = Character.all
         erb :'characters/index' # LINK TO ACTUAL FILE
