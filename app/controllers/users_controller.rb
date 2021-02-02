@@ -8,7 +8,14 @@ get '/login' do
 end
   
 post '/signup' do
-    binding.pry
+    @user = User.new(params["user"])
+    if @user.save
+        session["user_id"] = @user.id
+        redirect "/characters"
+    else
+        redirect '/signup'
+    end
+
 end
 
 
