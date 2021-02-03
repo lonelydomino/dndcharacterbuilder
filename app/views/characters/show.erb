@@ -1,9 +1,15 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My Characters</title>
+    <link rel="stylesheet" type="text/css" href="../css/characters/show.css">
+</head>
 
-
-
-<h3>Character name: </h3> <%= @character.name %>
-<h3>Character race: </h3><%= @character.race %>
-<h3>Character class: </h3><%= @character.character_class %>
-
-<a href="/characters"> Back </a>
+<h1>Character Page </h1>
+<div id="showstyle">
+    <h3 class="h">Character name:  <%= @character.name %></h3>
+    <h3 class="h">Character race: <%= @character.race %></h3>
+    <h3 class="h">Character class: <%= @character.character_class %></h3>
+</div>
+<br><br>
+<a id="showanchor" href="/characters"> Back </a>
 

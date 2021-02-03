@@ -1,24 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <title>My Characters</title>
+    <link rel="stylesheet" type="text/css" href="../css/characters/new.css">
+  </head>
+
+
 <h1> Create a character! </h1>
 
+
+<div class="formstyle">
 <form action="/characters" method="post">
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="name">
 
-<label for="name">Name: </label>
-<input type="text" name="name" id="name">
+  <label for="race">Race: </label>
+  <input type="text" name="race" id="race">
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+  <label for="class">Class: </label>
+  <input type="text" name="character_class" id="character_class">
 
-<label for="race">Race: </label>
-<input type="text" name="race" id="race">
-
-<label for="class">Class: </label>
-<input type="text" name="character_class" id="character_class">
-<input type="submit" value="Submit">
-
+  <input type="submit" value="Submit">
 </form>
+
+</div>

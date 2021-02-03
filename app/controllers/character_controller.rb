@@ -28,6 +28,7 @@ class CharacterController < ApplicationController
     post '/characters' do
         @character = Character.new(params)
         if @character.save
+            current_user.characters << @character
             redirect "/characters/#{@character.id}"
         else
             redirect '/characters/new'
