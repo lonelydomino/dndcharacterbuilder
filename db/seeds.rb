@@ -8,13 +8,14 @@ legolas = Character.create(name: "Legolas", character_class: "Archer", race: "el
 john = Character.create(name:"John",character_class: "Warrior", race: "human")
 ned = Character.create(name:"Ned",character_class: "Warrior", race: "human")
 harry = Character.create(name:"Harry",character_class: "Wizard", race: "human")
-
+moxxie = Character.create(name:"Moxxie", character_class: "Berserker",race: "Poopasaur")
 tolkien.characters << aragorn
 tolkien.characters << gimli
 tolkien.characters << legolas
 martin.characters << john
 martin.characters << ned
 rowling.characters << harry
+User.all[1].characters << moxxie
 
 sword = Weapon.create(name: "sword")
 axe = Weapon.create(name: "axe")

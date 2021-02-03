@@ -8,26 +8,16 @@ body {
   }
   /* Title */
   h1{
+    margin-top: 100px;
     text-align: center;
     color: #bbe1fa;
     font-family: verdana;
   }
   /* Comment */
-  
-  nav {
-    text-align: center;
-  }
-  
-  figcaption {
-    text-align: center;
-    font-size: 12px;
-  }
  
- /* Navigation Bar */ 
-  nav a {
-    padding: 0 10px;
-    margin: 0 auto;
-  }
+  
+ 
+
   
 #character-list {
     width: 800px;
@@ -97,4 +87,26 @@ ul.bot_nav {
     background:#3282b8;
     
 }
+
+p {
+    font-size: larger;
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 

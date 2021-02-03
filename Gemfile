@@ -14,7 +14,6 @@ gem 'require_all'
 gem 'shotgun'
 gem 'rack'
 gem 'tux'
-gem 'bootstrap'
 gem 'bcrypt'
 gem 'dotenv'
 

@@ -1,19 +1,22 @@
-class CharacterController < Sinatra::Base
+class CharacterController < ApplicationController
 
     configure do 
         set :views, 'app/views'
     end
-    layout 'standard'
+   
     get '/characters' do # LINK THATS IN BROWSER
-        @characters = Character.all
+        redirect_if_not_logged_in
+        @characters = current_user.characters
         erb :'characters/index' # LINK TO ACTUAL FILE
     end
 
     get '/characters/new' do
+        redirect_if_not_logged_in
         erb :'characters/new'
     end
 
     get '/characters/:id' do
+        redirect_if_not_logged_in
         @character = Character.find(params["id"])
         erb :'characters/show' 
     end

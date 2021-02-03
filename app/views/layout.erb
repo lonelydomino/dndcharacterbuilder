@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="stylesheet" type="text/css" href="../css/layout.css">
+<body>
+
+<% if logged_in? %>
+  <div class="navbar">
+    <a class="active" href="/">Home</a>
+    <a href="/login">Login</a>
+    <a href="/characters">Characters</a>
+    <a href="#">Weapons</a>
+    <a href="#">Armors</a>
+    <a href="/logout">Log out</a>
+  </div>
+<% end %>
+
+</body>
   
 
   <%= yield %>

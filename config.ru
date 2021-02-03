@@ -9,3 +9,4 @@ use UserController
 use WeaponController
 use ArmorController
 use CharacterController
+use SessionsController
